@@ -175,8 +175,8 @@
 
   .prefooter {
     background-image: url(https://thumbs.dreamstime.com/b/illustration-design-tetris-russia-puzzle-thank-you-frame-banner-rich-black-golden-background-tetris-russia-170320373.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
     background-position: center;
     min-height: 240px;
     margin-top: 40px;
