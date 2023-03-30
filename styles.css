@@ -173,6 +173,180 @@
 
   /* Footer */
 
+  /*  header */
+
+  body {
+    font-family: "Druk Trial";
+    letter-spacing: 1px;
+  }
+
+  header {
+    position: relative;
+    height: 100px; 
+    border-bottom: 1px solid black;
+    padding-bottom: 40px;
+    margin-top: 0;
+  }
+  
+  header .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  header .content img {
+    display: block;
+    max-height: 140px;
+    max-width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  header .content img:hover {
+    opacity: 0.8; 
+  }
+
+  /*  title */
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    background-image: url("https://cdn.shopify.com/s/files/1/0228/7629/1136/files/accbanner_2000x.png?v=1613702730");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+  
+  a {
+    text-decoration: none;
+  }
+  .title h1 {
+    margin: 0;
+    padding: 30px;
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+    text-shadow: purple;
+  }
+  
+  .title img {
+    margin-left: 20px;
+    height: 100px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .title img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  }
+
+  h1:hover {
+        color: lightblue;
+        text-decoration: none;
+      }
+
+  /*  Apply */
+
+  .apply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .apply img {
+    margin-left: 40px;
+    height: 200px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .apply a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .apply img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .apply img {
+        height: 140px;
+    }}
+
+  /*  Apply */
+
+  
+.fields {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding-right: 20px;
+  }
+  
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 1000px;
+  }
+  
+  .field img {
+    width: 240px;
+    max-height: 240px;
+    margin: 10px;
+    border: 1px solid black;
+  }
+  
+  .field img:hover {
+    transform: scale(1.15); 
+    opacity: 0.8;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; 
+  }
+  
+  .field span {
+    min-width: 130px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    padding: 5px;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .field span {
+        font-size: 1rem;
+    }}
+
+    
+@media only screen and (max-width: 600px) {
+    .field span {
+        font-size: 0.8rem;
+        padding: 10px 50px;
+    }
+    .field {
+        display: flex;
+        flex-direction: column;
+    }
+    .field img {
+        width: 180px;
+    }
+}
+
+  /* Footer */
+
   .prefooter {
     background-image: url(https://thumbs.dreamstime.com/b/illustration-design-tetris-russia-puzzle-thank-you-frame-banner-rich-black-golden-background-tetris-russia-170320373.jpg);
     background-size: contain;
@@ -184,6 +358,7 @@
     padding-right: auto;
     padding-left: auto;
   }
+
   footer {
     display: flex;
     flex-direction: row;
